@@ -8,13 +8,13 @@ export default function useCurrencyInfo(currency: string) {
   const [data, setData] = useState<CurrencyMap>({});
 
   useEffect(() => {
-    currency = currency.toLowerCase();
+    const normalizedCurrency = currency.toLowerCase();
     fetch(
-      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
+      `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${normalizedCurrency}.json`
     )
       .then((res) => res.json())
       .then((res) => {
-        const newData = res[currency] as CurrencyMap;
+        const newData = res[normalizedCurrency] as CurrencyMap;
         setData(newData);
         console.log("Fetched Data:", newData);
       })

@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useId, ChangeEvent } from "react";
 
 interface InputBoxProps {
   label: string;
@@ -25,6 +25,18 @@ export function InputBox({
 }: InputBoxProps) {
   const amountInputId = useId();
 
+  const handleAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (onAmountChange) {
+      onAmountChange(Number(e.target.value));
+    }
+  };
+
+  const handleCurrencyChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (onCurrencyChange) {
+      onCurrencyChange(e.target.value);
+    }
+  };
+
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       {/* Amount Section */}
@@ -39,7 +51,7 @@ export function InputBox({
           placeholder="Amount"
           disabled={amountDisable}
           value={amount}
-          onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+          onChange={handleAmountChange}
         />
       </div>
 
@@ -53,7 +65,7 @@ export function InputBox({
           className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
           placeholder="Search..."
           value={selectCurrency}
-          onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+          onChange={handleCurrencyChange}
           disabled={currencyDisable}
         />
         <datalist id="data-options">
