@@ -38,7 +38,7 @@ export function InputBox({
   };
 
   return (
-    <div className={`bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-3 rounded-lg text-sm flex ${className}`}>
+    <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
       {/* Amount Section */}
       <div className="w-1/2">
         <label htmlFor={amountInputId} className="text-black/40 mb-2 inline-block">
@@ -62,13 +62,13 @@ export function InputBox({
           list="data-options"
           id="data-input"
           name="data-input"
-          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none placeholder-gray-500"
+          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
           placeholder="Search..."
           value={selectCurrency}
           onChange={handleCurrencyChange}
           disabled={currencyDisable}
         />
-        <datalist id="data-options" className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
+        <datalist id="data-options">
           {currencyOptions.map((currency) => (
             <option key={currency} value={currency}>
               {currency}
