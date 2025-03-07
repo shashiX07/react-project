@@ -26,11 +26,11 @@ export default function App() {
   }, [length, isNumberAllowed, isSymbolAllowed, generatePassword]);
 
 
-  const passwordRef = useRef(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
 
   const copyToClipboard = () => {
     passwordRef.current?.select();
-    window.navigator.clipboard.writeText(passwordRef.current?.value);
+    window.navigator.clipboard.writeText(passwordRef.current?.value || "");
   };
 
   return (
