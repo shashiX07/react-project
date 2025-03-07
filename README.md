@@ -134,7 +134,7 @@ You can view the deployed project [here](https://passgensimp.vercel.app/).
 
 #### Deployed Project
 
-You can view the deployed project [here](N/A).
+You can view the deployed project [here](https://discussion-forum-three.vercel.app/).
 
 ## Common Setup
 
