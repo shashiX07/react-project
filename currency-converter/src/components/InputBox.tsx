@@ -68,7 +68,7 @@ export function InputBox({
           onChange={handleCurrencyChange}
           disabled={currencyDisable}
         />
-        <datalist id="data-options">
+        <datalist id="data-options" className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg">
           {currencyOptions.map((currency) => (
             <option key={currency} value={currency}>
               {currency}
