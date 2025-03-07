@@ -8,7 +8,7 @@ This repository contains multiple React projects, each with its own unique funct
   - [BG Changer](#bg-changer)
   - [Currency Converter](#currency-converter)
   - [Pass Generator](#pass-generator)
-  - [Kdag Forum](#kdag-forum)
+  - [Discussion Forum](#Discussion-forum)
 - [Common Setup](#common-setup)
 
 ## Projects
@@ -100,9 +100,9 @@ You can view the deployed project [here](https://curconvreal.vercel.app/).
 
 You can view the deployed project [here](https://passgensimp.vercel.app/).
 
-### Kdag Forum
+### Discussion Forum
 
-**Kdag Forum** is a React-based forum application designed to facilitate community discussions with dynamic features.
+**Discussion Forum** is a React-based forum application designed to facilitate community discussions with dynamic features.
 
 #### Features
 
@@ -115,9 +115,9 @@ You can view the deployed project [here](https://passgensimp.vercel.app/).
 
 #### Setup
 
-1. Navigate to the `kdag-forum` directory:
+1. Navigate to the `Discussion-forum` directory:
    ```sh
-   cd kdag-forum
+   cd Discussion-forum
    ```
 2. Install dependencies:
    ```sh
@@ -153,6 +153,6 @@ For each project, follow these steps to set up and run the development server:
    npm start
    ```
 
-Replace `<project-directory>` with the respective project folder name (e.g., `bgchanger`, `currency-converter`, `pass-generator`, `kdag-forum`).
+Replace `<project-directory>` with the respective project folder name (e.g., `bgchanger`, `currency-converter`, `pass-generator`, `Discussion-forum`).
 
 Feel free to explore each project and contribute to their development!
