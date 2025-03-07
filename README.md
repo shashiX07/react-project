@@ -19,8 +19,8 @@ This repository contains multiple React projects, each with its own unique funct
 
 #### Features
 
-- Change background color by clicking on color buttons.
-- Save the selected color in local storage.
+- Nothing !! its just for fun . lol.
+
 
 #### Setup
 
