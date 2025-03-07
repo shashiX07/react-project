@@ -19,8 +19,8 @@ This repository contains multiple React projects, each with its own unique funct
 
 #### Features
 
-- Nothing !! its just for fun . lol.
-
+- Change background color by clicking on color buttons.
+- Save the selected color in local storage.
 
 #### Setup
 
@@ -36,6 +36,10 @@ This repository contains multiple React projects, each with its own unique funct
    ```sh
    npm start
    ```
+
+#### Deployed Project
+
+You can view the deployed project [here](https://bgchangersmp.vercel.app/).
 
 ### Currency Converter
 
@@ -62,6 +66,10 @@ This repository contains multiple React projects, each with its own unique funct
    npm start
    ```
 
+#### Deployed Project
+
+You can view the deployed project [here](https://curconvreal.vercel.app/).
+
 ### Pass Generator
 
 **Pass Generator** is a React application that generates random passwords based on user-selected criteria such as length, inclusion of numbers, and symbols.
@@ -87,6 +95,10 @@ This repository contains multiple React projects, each with its own unique funct
    ```sh
    npm start
    ```
+
+#### Deployed Project
+
+You can view the deployed project [here](https://passgensimp.vercel.app/).
 
 ### Kdag Forum
 
@@ -119,6 +131,10 @@ This repository contains multiple React projects, each with its own unique funct
    ```sh
    npm run server
    ```
+
+#### Deployed Project
+
+You can view the deployed project [here](N/A).
 
 ## Common Setup
 
